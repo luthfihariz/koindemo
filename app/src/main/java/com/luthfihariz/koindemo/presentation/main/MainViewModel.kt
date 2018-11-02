@@ -8,4 +8,8 @@ class MainViewModel(private val userRepository: UserRepository) : ViewModel() {
     fun getUserName(): String {
         return userRepository.getUserName()
     }
+
+    fun getBaseUrl(): String {
+        return userRepository.getBaseUrl()
+    }
 }
